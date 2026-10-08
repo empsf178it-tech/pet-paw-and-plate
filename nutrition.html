@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smarter Pet Nutrition & Experts — PAW & PLATE</title>
+  <meta name="description" content="Learn evidence-backed pet nutrition principles from veterinary dietitians, life-stage feeding protocols, and macronutrient balance for dogs and cats.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="nutrition">
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg paw-navbar">
+    <div class="container-custom">
+
+      <!-- Brand Logo -->
+      <a class="brand-logo" href="index.html">
+        <span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE
+      </a>
+
+      <!-- Desktop Center Nav Links -->
+      <div class="d-none d-lg-flex navbar-nav-center">
+        <a class="nav-link-paw" href="index.html">Home</a>
+        <a class="nav-link-paw" href="recipes.html">Recipes</a>
+        <a class="nav-link-paw" href="ingredients.html">Ingredients</a>
+        <a class="nav-link-paw active" href="nutrition.html">Nutrition</a>
+        <a class="nav-link-paw" href="meal-planner.html">Meal Planner</a>
+        <a class="nav-link-paw" href="contact.html">Contact</a>
+      </div>
+
+      <!-- Desktop Right Actions -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a href="recipes.html" class="header-action-btn" title="Search Recipes"><i class="fas fa-search"></i></a>
+        <a href="dashboard.html" class="header-action-btn" title="Saved Favorites">
+          <i class="far fa-heart"></i>
+          <span class="badge-count" id="favCountBadge">1</span>
+        </a>
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary btn-paw-sm ms-2">
+          <i class="fas fa-calendar-alt me-1"></i> Build Meal Plan
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar-toggler border-0 d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas">
+        <i class="fas fa-bars fa-lg text-forest"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-paw" tabindex="-1" id="mobileNavOffcanvas">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html"><i class="fas fa-utensils"></i> PAW & PLATE</a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li><a class="nav-link nav-link-paw" href="index.html"><i class="fas fa-home me-2 text-sage"></i> Home</a></li>
+        <li><a class="nav-link nav-link-paw" href="recipes.html"><i class="fas fa-book-open me-2 text-sage"></i> Recipes</a></li>
+        <li><a class="nav-link nav-link-paw" href="ingredients.html"><i class="fas fa-carrot me-2 text-sage"></i> Ingredients</a></li>
+        <li><a class="nav-link nav-link-paw active" href="nutrition.html"><i class="fas fa-heartbeat me-2 text-sage"></i> Nutrition</a></li>
+        <li><a class="nav-link nav-link-paw" href="meal-planner.html"><i class="fas fa-calendar-alt me-2 text-sage"></i> Meal Planner</a></li>
+        <li><a class="nav-link nav-link-paw" href="community.html"><i class="fas fa-users me-2 text-sage"></i> Community</a></li>
+        <li><a class="nav-link nav-link-paw" href="about.html"><i class="fas fa-info-circle me-2 text-sage"></i> About / Studio</a></li>
+        <li><a class="nav-link nav-link-paw" href="contact.html"><i class="fas fa-envelope me-2 text-sage"></i> Contact</a></li>
+      </ul>
+      <div class="mt-4 pt-3 border-top">
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary w-100">BUILD A MEAL PLAN</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Header Hero -->
+  <section class="bg-cream py-5 border-bottom">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <div class="hero-subtitle">VETERINARY SCIENCE & DIETETICS</div>
+          <h1 class="display-4 font-heading text-forest mb-3">SMARTER PET NUTRITION</h1>
+          <p class="lead text-muted mb-4">
+            Understanding macronutrient ratios, portion control, life-stage physiology, and species-appropriate fresh feeding.
+          </p>
+          <a href="#expertsSection" class="btn-paw btn-paw-primary">Meet Our Veterinary Specialists</a>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <img src="assets/images/36.jpg" alt="Veterinary nutritionist showing canine pyramid chart" class="img-fluid rounded-4 shadow-lg border">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Educational Pillars -->
+  <section class="section-padding bg-warm-white">
+    <div class="container-custom">
+      <div class="text-center mb-5 reveal">
+        <div class="hero-subtitle">CORE FEEDING PRINCIPLES</div>
+        <h2 class="display-6 font-heading">The Four Pillars of Wholesome Bowls</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="bg-cream p-4 rounded-4 border h-100">
+            <div class="text-terracotta mb-3"><i class="fas fa-drumstick-bite fa-2x"></i></div>
+            <h4 class="font-heading mb-2">High Bioavailability</h4>
+            <p class="small text-muted mb-0">Human-grade muscle meats and organ proteins offer up to 94% amino acid absorbability compared to rendered meals.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="bg-cream p-4 rounded-4 border h-100">
+            <div class="text-forest mb-3"><i class="fas fa-glass-water fa-2x"></i></div>
+            <h4 class="font-heading mb-2">Moisture & Hydration</h4>
+            <p class="small text-muted mb-0">Fresh meals naturally contain 65–75% cellular moisture, vital for feline urinary tract health and renal longevity.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="bg-cream p-4 rounded-4 border h-100">
+            <div class="text-sage mb-3"><i class="fas fa-weight-scale fa-2x"></i></div>
+            <h4 class="font-heading mb-2">Portion Control</h4>
+            <p class="small text-muted mb-0">Precision gram-based caloric intake prevents canine obesity while maintaining lean muscle mass.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="bg-cream p-4 rounded-4 border h-100">
+            <div class="text-terracotta mb-3"><i class="fas fa-seedling fa-2x"></i></div>
+            <h4 class="font-heading mb-2">Life-Stage Tweaks</h4>
+            <p class="small text-muted mb-0">Puppy growth requires higher calcium-phosphorus ratios, while senior pets thrive on joint-supporting Omega-3s.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Experts Section -->
+  <section class="section-padding bg-cream border-top" id="expertsSection">
+    <div class="container-custom">
+      <div class="text-center mb-5 reveal">
+        <div class="hero-subtitle">VETERINARY & CULINARY ADVISORS</div>
+        <h2 class="display-5 font-heading">MEET THE EXPERTS</h2>
+        <p class="text-muted max-w-600 mx-auto">
+          Our recipes and nutritional guidelines are developed in collaboration with leading veterinary dietitians and culinary creators.
+        </p>
+      </div>
+
+      <div class="row" id="expertsGrid">
+        <!-- JS populates expert cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Banner -->
+  <section class="section-padding bg-forest text-warm-white">
+    <div class="container-custom text-center reveal">
+      <h2 class="display-5 font-heading text-warm-white mb-3">Need Personalized Veterinary Diet Guidance?</h2>
+      <p class="lead mb-4" style="color: rgba(255,253,248,0.85); max-width:640px; margin:0 auto;">
+        Book a 1-on-1 virtual consultation with our veterinary team to tailor a custom home-cooked diet for your pet.
+      </p>
+      <a href="contact.html" class="btn-paw btn-paw-terracotta btn-paw-lg">REQUEST CONSULTATION</a>
+    </div>
+  </section>
+
+  <!-- Safety & Disclaimer Banner -->
+  <section class="py-4 bg-cream border-top">
+    <div class="container-custom">
+      <div class="disclaimer-banner">
+        <i class="fas fa-info-circle text-terracotta me-2"></i>
+        <strong>Nutritional Information Disclaimer:</strong> Nutritional information is provided for educational purposes. Pets with medical conditions, allergies, or special dietary requirements should follow guidance from a qualified veterinarian.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="paw-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand"><span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE</a>
+          <div class="footer-tagline">Beautiful food. Better lives.</div>
+          <p class="small text-muted mb-3">
+            A premium digital culinary studio dedicated to wholesome pet food recipes, tailored nutrition, and weekly bowl planning.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="recipes.html">Recipe Library</a></li>
+            <li><a href="ingredients.html">Superfoods</a></li>
+            <li><a href="nutrition.html">Pet Nutrition</a></li>
+            <li><a href="meal-planner.html">Weekly Planner</a></li>
+            <li><a href="community.html">Pet Table</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+            <li><a href="admin.html">Admin Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-heading">Gourmet Newsletter</h4>
+          <p class="small text-muted mb-3">Receive weekly chef-curated pet recipes and nutrition advice directly in your inbox.</p>
+          <div class="input-group">
+            <input type="email" class="form-control form-paw-control" placeholder="Enter your email...">
+            <button class="btn btn-paw-terracotta" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 PAW &amp; PLATE Culinary Studio. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="nutrition.html">Nutrition Disclaimer</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

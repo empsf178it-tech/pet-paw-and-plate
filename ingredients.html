@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Know What Goes In The Bowl — Ingredients — PAW & PLATE</title>
+  <meta name="description" content="Explore human-grade pet food superfoods, fresh proteins, anti-inflammatory vegetables, and antioxidant berries.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="ingredients">
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg paw-navbar">
+    <div class="container-custom">
+
+      <!-- Brand Logo -->
+      <a class="brand-logo" href="index.html">
+        <span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE
+      </a>
+
+      <!-- Desktop Center Nav Links -->
+      <div class="d-none d-lg-flex navbar-nav-center">
+        <a class="nav-link-paw" href="index.html">Home</a>
+        <a class="nav-link-paw" href="recipes.html">Recipes</a>
+        <a class="nav-link-paw active" href="ingredients.html">Ingredients</a>
+        <a class="nav-link-paw" href="nutrition.html">Nutrition</a>
+        <a class="nav-link-paw" href="meal-planner.html">Meal Planner</a>
+        <a class="nav-link-paw" href="contact.html">Contact</a>
+      </div>
+
+      <!-- Desktop Right Actions -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a href="recipes.html" class="header-action-btn" title="Search Recipes"><i class="fas fa-search"></i></a>
+        <a href="dashboard.html" class="header-action-btn" title="Saved Favorites">
+          <i class="far fa-heart"></i>
+          <span class="badge-count" id="favCountBadge">1</span>
+        </a>
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary btn-paw-sm ms-2">
+          <i class="fas fa-calendar-alt me-1"></i> Build Meal Plan
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar-toggler border-0 d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas">
+        <i class="fas fa-bars fa-lg text-forest"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-paw" tabindex="-1" id="mobileNavOffcanvas">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html"><i class="fas fa-utensils"></i> PAW & PLATE</a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li><a class="nav-link nav-link-paw" href="index.html"><i class="fas fa-home me-2 text-sage"></i> Home</a></li>
+        <li><a class="nav-link nav-link-paw" href="recipes.html"><i class="fas fa-book-open me-2 text-sage"></i> Recipes</a></li>
+        <li><a class="nav-link nav-link-paw active" href="ingredients.html"><i class="fas fa-carrot me-2 text-sage"></i> Ingredients</a></li>
+        <li><a class="nav-link nav-link-paw" href="nutrition.html"><i class="fas fa-heartbeat me-2 text-sage"></i> Nutrition</a></li>
+        <li><a class="nav-link nav-link-paw" href="meal-planner.html"><i class="fas fa-calendar-alt me-2 text-sage"></i> Meal Planner</a></li>
+        <li><a class="nav-link nav-link-paw" href="community.html"><i class="fas fa-users me-2 text-sage"></i> Community</a></li>
+        <li><a class="nav-link nav-link-paw" href="about.html"><i class="fas fa-info-circle me-2 text-sage"></i> About / Studio</a></li>
+        <li><a class="nav-link nav-link-paw" href="contact.html"><i class="fas fa-envelope me-2 text-sage"></i> Contact</a></li>
+      </ul>
+      <div class="mt-4 pt-3 border-top">
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary w-100">BUILD A MEAL PLAN</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Header Section -->
+  <section class="bg-cream py-5 border-bottom text-center">
+    <div class="container-custom">
+      <div class="hero-subtitle">INGREDIENT TRANSPARENCY</div>
+      <h1 class="display-4 font-heading text-forest mb-3">KNOW WHAT GOES IN THE BOWL</h1>
+      <p class="lead text-muted max-w-600 mx-auto">
+        Every ingredient in Paw & Plate recipes is selected for visual purity, bioavailability, and cellular pet health.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+        <span class="badge bg-forest text-warm-white px-3 py-2 rounded-pill fs-6">PROTEINS</span>
+        <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill fs-6">VEGETABLES</span>
+        <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill fs-6">GRAINS</span>
+        <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill fs-6">FRUITS</span>
+        <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill fs-6">HEALTHY FATS</span>
+        <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill fs-6">SUPPLEMENTS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredients Grid -->
+  <section class="section-padding bg-warm-white">
+    <div class="container-custom">
+      <div class="row" id="ingredientsGrid">
+        <!-- JS populates ingredients cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIQUE SECTION 1: The Golden Ratio Breakdown -->
+  <section class="section-padding bg-cream border-top border-bottom">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <div class="rounded-4 overflow-hidden shadow-lg border border-4 border-white">
+              <img src="assets/images/14.jpg" alt="Culinary Bowl Ingredients" class="img-fluid w-100 object-fit-cover" style="height: 480px;">
+            </div>
+            <!-- Floating Badge Overlays -->
+            <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-white rounded-3 shadow-md border-start border-4 border-forest" style="max-width: 240px;">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-certificate text-terracotta fa-lg"></i>
+                <div>
+                  <div class="fw-bold text-forest small">100% Bioavailable</div>
+                  <div class="text-muted extra-small">Zero Synthetic Fillers</div>
+                </div>
+              </div>
+            </div>
+            <div class="position-absolute top-0 end-0 m-3 p-3 bg-forest text-warm-white rounded-3 shadow-md" style="max-width: 200px;">
+              <div class="fw-bold fs-5">5-Star</div>
+              <div class="small">Whole Food Standard</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="hero-subtitle mb-2">MACRONUTRIENT BALANCE</div>
+          <h2 class="display-6 font-heading text-forest mb-3">The Golden Ratio of Fresh Pet Bowls</h2>
+          <p class="text-muted mb-4">
+            Every culinary recipe developed in our pet kitchen is crafted around precise biological nutrient ratios. We balance fresh whole-food proteins, antioxidant-rich botanicals, healthy fatty acids, and essential minerals.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="ingredient-ratio-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="ratio-badge"><i class="fas fa-drumstick-bite me-1"></i> 50-60% PROTEIN</span>
+                  <i class="fas fa-shield-alt text-forest"></i>
+                </div>
+                <h4 class="h6 font-heading text-forest mb-1">Human-Grade Animal Protein</h4>
+                <p class="small text-muted mb-0">Wild Alaskan salmon, pasture-raised turkey, and grass-fed lamb for muscular repair and vibrant cellular energy.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ingredient-ratio-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="ratio-badge"><i class="fas fa-seedling me-1"></i> 20-25% FIBER</span>
+                  <i class="fas fa-heartbeat text-terracotta"></i>
+                </div>
+                <h4 class="h6 font-heading text-forest mb-1">Anti-Inflammatory Botanicals</h4>
+                <p class="small text-muted mb-0">Organic sweet potato, steamed kale, carrots, and wild blueberries to support optimal gut biome health.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ingredient-ratio-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="ratio-badge"><i class="fas fa-droplet me-1"></i> 10-15% ESSENTIAL FATS</span>
+                  <i class="fas fa-sparkles text-warning"></i>
+                </div>
+                <h4 class="h6 font-heading text-forest mb-1">Omega-3 &amp; 6 Healthy Lipids</h4>
+                <p class="small text-muted mb-0">Cold-pressed salmon oil and organic chia seed oil for brilliant coat sheen, joint lubrication, and brain support.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ingredient-ratio-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="ratio-badge"><i class="fas fa-mortar-pestle me-1"></i> 5-10% MICRONUTRIENTS</span>
+                  <i class="fas fa-leaf text-success"></i>
+                </div>
+                <h4 class="h6 font-heading text-forest mb-1">Organic Chelated Minerals</h4>
+                <p class="small text-muted mb-0">Organic Icelandic kelp meal, natural eggshell calcium, and turmeric for bone density and joint protection.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <a href="nutrition.html" class="btn-paw btn-paw-primary">
+              <i class="fas fa-calculator me-1"></i> Calculate Your Pet's Nutrient Needs
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIQUE SECTION 2: Farm-to-Bowl Quality Pillars -->
+  <section class="section-padding bg-warm-white">
+    <div class="container-custom">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="hero-subtitle mb-2">SOURCING INTEGRITY</div>
+        <h2 class="display-6 font-heading text-forest mb-3">Our 3 Pillars of Ingredient Purity</h2>
+        <p class="text-muted">
+          We inspect every single ingredient that enters our kitchen with the same rigor used in premium human culinary studios.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="farm-card">
+            <div class="farm-card-img-wrapper">
+              <img src="assets/images/35.jpg" alt="Human Grade Protein Sourcing">
+              <span class="farm-card-badge"><i class="fas fa-check-circle text-forest me-1"></i> 100% Human Grade</span>
+            </div>
+            <div class="farm-card-body">
+              <h3 class="h5 font-heading text-forest mb-2">Certified Human-Grade Quality</h3>
+              <p class="text-muted small mb-3">
+                Every piece of meat, vegetable, and berry used in Paw &amp; Plate recipes meets identical safety and quality standards required for human food production.
+              </p>
+              <div class="mt-auto pt-3 border-top d-flex align-items-center justify-content-between">
+                <span class="extra-small text-muted fw-bold">ZERO BYPRODUCTS</span>
+                <span class="badge bg-sage-light text-forest">USDA Inspected</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="farm-card">
+            <div class="farm-card-img-wrapper">
+              <img src="assets/images/42.jpg" alt="Gentle Cooking Methods">
+              <span class="farm-card-badge"><i class="fas fa-fire text-terracotta me-1"></i> Gentle Cooking</span>
+            </div>
+            <div class="farm-card-body">
+              <h3 class="h5 font-heading text-forest mb-2">Nutrient-Preserving Slow Steaming</h3>
+              <p class="text-muted small mb-3">
+                Instead of high-heat industrial processing, our ingredients are gently simmered or steamed at low temperatures to lock in delicate natural vitamins and enzymes.
+              </p>
+              <div class="mt-auto pt-3 border-top d-flex align-items-center justify-content-between">
+                <span class="extra-small text-muted fw-bold">LOW TEMP (165°F)</span>
+                <span class="badge bg-sage-light text-forest">Maximum Bioavailability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="farm-card">
+            <div class="farm-card-img-wrapper">
+              <img src="assets/images/48.jpg" alt="Zero Preservatives">
+              <span class="farm-card-badge"><i class="fas fa-leaf text-success me-1"></i> 0% Synthetics</span>
+            </div>
+            <div class="farm-card-body">
+              <h3 class="h5 font-heading text-forest mb-2">No Corn, Wheat, Soy or Fillers</h3>
+              <p class="text-muted small mb-3">
+                We formulate completely without cheap grain fillers, artificial colors, chemical preservatives (BHA/BHT), or rendered meat meals. Pure food only.
+              </p>
+              <div class="mt-auto pt-3 border-top d-flex align-items-center justify-content-between">
+                <span class="extra-small text-muted fw-bold">100% TRANSPARENT</span>
+                <span class="badge bg-sage-light text-forest">Clean Label</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety & Disclaimer Banner -->
+  <section class="py-4 bg-cream border-top">
+    <div class="container-custom">
+      <div class="disclaimer-banner">
+        <i class="fas fa-info-circle text-terracotta me-2"></i>
+        <strong>Veterinary Notice:</strong> Recipe and nutrition information is for educational purposes and should be reviewed with a qualified veterinarian for pets with medical conditions or special dietary needs.
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredient Detail Modal -->
+  <div class="modal fade" id="ingredientDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-warm-white border-0 shadow-lg">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title font-heading text-forest" id="ingModalName">Ingredient Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <div class="rounded-circle overflow-hidden border border-3 border-cream mx-auto mb-3 shadow-sm" style="width:120px;height:120px;">
+            <img id="ingModalImg" src="" alt="" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <span class="badge bg-sage-light text-forest mb-2" id="ingModalCategory">Category</span>
+          <p class="text-muted small mb-4" id="ingModalBenefits"></p>
+
+          <div class="text-start bg-cream p-3 rounded mb-3">
+            <div class="fw-bold text-forest mb-1"><i class="fas fa-utensils me-1"></i> Common Culinary Uses:</div>
+            <div class="small text-muted mb-3" id="ingModalUses"></div>
+            <div class="fw-bold text-forest mb-1"><i class="fas fa-paw me-1"></i> Species Compatibility:</div>
+            <div class="small text-muted" id="ingModalCompat"></div>
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn-paw btn-paw-outline btn-paw-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="paw-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand"><span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE</a>
+          <div class="footer-tagline">Beautiful food. Better lives.</div>
+          <p class="small text-muted mb-3">
+            A premium digital culinary studio dedicated to wholesome pet food recipes, tailored nutrition, and weekly bowl planning.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="recipes.html">Recipe Library</a></li>
+            <li><a href="ingredients.html">Superfoods</a></li>
+            <li><a href="nutrition.html">Pet Nutrition</a></li>
+            <li><a href="meal-planner.html">Weekly Planner</a></li>
+            <li><a href="community.html">Pet Table</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+            <li><a href="admin.html">Admin Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-heading">Gourmet Newsletter</h4>
+          <p class="small text-muted mb-3">Receive weekly chef-curated pet recipes and nutrition advice directly in your inbox.</p>
+          <div class="input-group">
+            <input type="email" class="form-control form-paw-control" placeholder="Enter your email...">
+            <button class="btn btn-paw-terracotta" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 PAW &amp; PLATE Culinary Studio. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="nutrition.html">Nutrition Disclaimer</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

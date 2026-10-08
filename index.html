@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW & PLATE — Gourmet Pet Nutrition & Culinary Studio</title>
+  <meta name="description" content="Discover wholesome, culinary pet recipes, personalized meal plans, ingredient guides, and expert pet nutrition advice crafted for dogs and cats.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Bootstrap 5 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg paw-navbar">
+    <div class="container-custom">
+
+      <!-- Brand Logo -->
+      <a class="brand-logo" href="index.html">
+        <span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE
+      </a>
+
+      <!-- Desktop Center Nav Links -->
+      <div class="d-none d-lg-flex navbar-nav-center">
+        <a class="nav-link-paw active" href="index.html">Home</a>
+        <a class="nav-link-paw" href="recipes.html">Recipes</a>
+        <a class="nav-link-paw" href="ingredients.html">Ingredients</a>
+        <a class="nav-link-paw" href="nutrition.html">Nutrition</a>
+        <a class="nav-link-paw" href="meal-planner.html">Meal Planner</a>
+        <a class="nav-link-paw" href="contact.html">Contact</a>
+      </div>
+
+      <!-- Desktop Right Actions -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a href="recipes.html" class="header-action-btn" title="Search Recipes"><i class="fas fa-search"></i></a>
+        <a href="dashboard.html" class="header-action-btn" title="Saved Favorites">
+          <i class="far fa-heart"></i>
+          <span class="badge-count" id="favCountBadge">1</span>
+        </a>
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary btn-paw-sm ms-2">
+          <i class="fas fa-calendar-alt me-1"></i> Build Meal Plan
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar-toggler border-0 d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas">
+        <i class="fas fa-bars fa-lg text-forest"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-paw" tabindex="-1" id="mobileNavOffcanvas">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html"><i class="fas fa-utensils"></i> PAW & PLATE</a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li><a class="nav-link nav-link-paw active" href="index.html"><i class="fas fa-home me-2 text-sage"></i> Home</a></li>
+        <li><a class="nav-link nav-link-paw" href="recipes.html"><i class="fas fa-book-open me-2 text-sage"></i> Recipes</a></li>
+        <li><a class="nav-link nav-link-paw" href="ingredients.html"><i class="fas fa-carrot me-2 text-sage"></i> Ingredients</a></li>
+        <li><a class="nav-link nav-link-paw" href="nutrition.html"><i class="fas fa-heartbeat me-2 text-sage"></i> Nutrition</a></li>
+        <li><a class="nav-link nav-link-paw" href="meal-planner.html"><i class="fas fa-calendar-alt me-2 text-sage"></i> Meal Planner</a></li>
+        <li><a class="nav-link nav-link-paw" href="community.html"><i class="fas fa-users me-2 text-sage"></i> Community</a></li>
+        <li><a class="nav-link nav-link-paw" href="about.html"><i class="fas fa-info-circle me-2 text-sage"></i> About / Studio</a></li>
+        <li><a class="nav-link nav-link-paw" href="contact.html"><i class="fas fa-envelope me-2 text-sage"></i> Contact</a></li>
+      </ul>
+      <div class="mt-4 pt-3 border-top">
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary w-100">BUILD A MEAL PLAN</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-wrapper">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <div class="hero-subtitle">GOURMET NUTRITION FOR EVERY BOWL</div>
+          <h1 class="hero-title">Beautiful food. <br>Better lives for your pets.</h1>
+          <p class="hero-description">
+            Wholesome, culinary-grade recipes crafted around the exact biological needs of your dog and cat. Formulated with veterinary nutritionists.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="recipes.html" class="btn-paw btn-paw-primary btn-paw-lg">
+              <i class="fas fa-utensils me-1"></i> EXPLORE RECIPES
+            </a>
+            <a href="meal-planner.html" class="btn-paw btn-paw-outline btn-paw-lg">
+              <i class="fas fa-calendar-alt me-1"></i> BUILD A MEAL PLAN
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal-right text-center text-lg-end">
+          <div class="hero-circle-wrapper position-relative d-inline-block">
+            
+            <!-- Circular Rotating Text Stamp -->
+            <div class="rotating-text-stamp">
+              <svg viewBox="0 0 220 220" class="rotating-text-svg">
+                <path id="circleTextPath" d="M 110, 110 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0" fill="none" />
+                <text font-size="13" font-weight="700" letter-spacing="3" fill="#294A3A">
+                  <textPath href="#circleTextPath" startOffset="0%">✦ GOURMET PET NUTRITION ✦ FRESH CULINARY STUDIO </textPath>
+                </text>
+              </svg>
+              <div class="stamp-center-icon">
+                <i class="fas fa-utensils text-terracotta"></i>
+              </div>
+            </div>
+
+            <!-- Circular Image Frame -->
+            <div class="hero-img-circle">
+              <img src="assets/images/1.jpg" alt="Gourmet Pet Food Bowl">
+            </div>
+
+            <!-- Corner Nutrition Badge -->
+            <div class="hero-circle-badge">
+              <div class="badge-header"><i class="fas fa-shield-alt text-forest me-1"></i> BALANCED MEAL</div>
+              <div class="badge-tags mt-1">
+                <span class="badge-tag-item">32% Lean Protein</span>
+                <span class="badge-tag-item">Omega Fats</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category & Trust Bar -->
+  <section class="trust-bar">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <a href="recipes.html?cat=dog" class="trust-item"><i class="fas fa-dog"></i> DOG RECIPES</a>
+        <a href="recipes.html?cat=cat" class="trust-item"><i class="fas fa-cat"></i> CAT RECIPES</a>
+        <a href="recipes.html?cat=puppy" class="trust-item"><i class="fas fa-bone"></i> PUPPY CARE</a>
+        <a href="recipes.html?cat=kitten" class="trust-item"><i class="fas fa-paw"></i> KITTEN GROWTH</a>
+        <a href="recipes.html?cat=senior" class="trust-item"><i class="fas fa-heart"></i> SENIOR PETS</a>
+        <a href="recipes.html?cat=special" class="trust-item"><i class="fas fa-leaf"></i> SPECIAL DIETS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Recipes Section -->
+  <section class="section-padding bg-warm-white">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap align-items-end justify-content-between mb-5 reveal">
+        <div>
+          <div class="hero-subtitle">FROM OUR CULINARY KITCHEN</div>
+          <h2 class="display-6 font-heading">Featured Chef Creations</h2>
+        </div>
+        <a href="recipes.html" class="btn-paw btn-paw-outline">View All Recipes <i class="fas fa-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="row" id="featuredRecipesGrid">
+        <!-- JS dynamically populates top 6 recipes -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Pet Profile Builder Section -->
+  <section class="section-padding bg-cream">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal-left">
+          <div class="hero-subtitle">TAILORED NUTRITION ENGINE</div>
+          <h2 class="display-6 font-heading mb-3">Build Your Pet's Custom Bowl Profile</h2>
+          <p class="text-muted mb-4">
+            Every pet has unique dietary requirements based on breed, age, weight, and energy levels. Fill in your pet's details to receive personalized recipe recommendations.
+          </p>
+          <div class="d-flex align-items-center gap-3 p-3 bg-warm-white border rounded-3 mb-3">
+            <img src="assets/images/10.jpg" alt="Golden Retriever" style="width:60px;height:60px;object-fit:cover;border-radius:50%;">
+            <div>
+              <div class="fw-bold text-forest">Scientifically Balanced</div>
+              <div class="small text-muted">Frontend recommendation algorithm without medical overclaims.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal-right">
+          <div class="bg-warm-white p-4 p-md-5 rounded-4 border shadow-sm">
+            <h3 class="font-heading mb-4 text-forest">Create Pet Profile</h3>
+            <form id="homePetProfileForm">
+              <div class="row g-3">
+                <div class="col-md-6 form-paw-group">
+                  <label class="form-paw-label">Pet Name</label>
+                  <input type="text" class="form-paw-control" id="petName" value="Max" required>
+                </div>
+                <div class="col-md-6 form-paw-group">
+                  <label class="form-paw-label">Species</label>
+                  <select class="form-paw-control" id="petSpecies">
+                    <option value="dog" selected>Dog</option>
+                    <option value="cat">Cat</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-paw-group">
+                  <label class="form-paw-label">Breed</label>
+                  <input type="text" class="form-paw-control" id="petBreed" value="Golden Retriever">
+                </div>
+                <div class="col-md-6 form-paw-group">
+                  <label class="form-paw-label">Life Stage</label>
+                  <select class="form-paw-control" id="petLifeStage">
+                    <option value="puppy">Puppy / Kitten</option>
+                    <option value="adult" selected>Adult</option>
+                    <option value="senior">Senior</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-paw-group">
+                  <label class="form-paw-label">Weight (kg)</label>
+                  <input type="text" class="form-paw-control" id="petWeight" value="28 kg">
+                </div>
+                <div class="col-md-6 form-paw-group">
+                  <label class="form-paw-label">Activity Level</label>
+                  <select class="form-paw-control" id="petActivity">
+                    <option value="Low">Low / Indoor</option>
+                    <option value="Moderate" selected>Moderate Active</option>
+                    <option value="High">High Energy / Outdoor</option>
+                  </select>
+                </div>
+                <div class="col-12 form-paw-group">
+                  <label class="form-paw-label">Dietary Preferences / Notes</label>
+                  <input type="text" class="form-paw-control" id="petPreferences" placeholder="e.g. Grain-Free, High Protein, Sensitive Stomach">
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn-paw btn-paw-primary w-100 btn-paw-lg">
+                    <i class="fas fa-sparkles me-2"></i> GENERATE PERSONALIZED MEAL RECOMMENDATIONS
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culinary Studio Feature Showcase -->
+  <section class="section-padding bg-warm-white">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2 reveal-right">
+          <div class="hero-subtitle">OUR CULINARY PHILOSOPHY</div>
+          <h2 class="display-6 font-heading mb-3">Cooked with love. Grounded in science.</h2>
+          <p class="text-muted mb-4">
+            At Paw & Plate, we treat pet food with the exact same culinary precision as fine dining. Fresh proteins, vibrant organic vegetables, and zero artificial fillers.
+          </p>
+          <div class="row g-3 mb-4">
+            <div class="col-6">
+              <div class="p-3 bg-cream rounded border">
+                <div class="h4 font-heading text-terracotta mb-1">100%</div>
+                <div class="small text-muted fw-semibold">Human-Grade Ingredients</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 bg-cream rounded border">
+                <div class="h4 font-heading text-forest mb-1">0%</div>
+                <div class="small text-muted fw-semibold">Artificial Preservatives</div>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn-paw btn-paw-outline">EXPLORE OUR STUDIO <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+
+        <div class="col-lg-6 order-lg-1 reveal-left">
+          <div class="row g-3">
+            <div class="col-6">
+              <img src="assets/images/25.jpg" alt="Chef preparing pet bowl" class="img-fluid rounded-4 shadow-sm" style="height:280px;width:100%;object-fit:cover;">
+            </div>
+            <div class="col-6">
+              <img src="assets/images/20.jpg" alt="Woman cooking fresh veggies for dog" class="img-fluid rounded-4 shadow-sm" style="height:280px;width:100%;object-fit:cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety & Educational Disclaimer -->
+  <section class="py-4 bg-cream">
+    <div class="container-custom">
+      <div class="disclaimer-banner reveal">
+        <i class="fas fa-info-circle text-terracotta fa-lg me-2"></i>
+        <strong>Nutritional Information Disclaimer:</strong> Recipe and nutritional information provided on Paw & Plate is for educational and culinary inspiration purposes. Pets with medical conditions, allergies, or specialized dietary needs should receive guidance from a qualified veterinarian.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="paw-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand"><span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE</a>
+          <div class="footer-tagline">Beautiful food. Better lives.</div>
+          <p class="small text-muted mb-3">
+            A premium digital culinary studio dedicated to wholesome pet food recipes, tailored nutrition, and weekly bowl planning.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="recipes.html">Recipe Library</a></li>
+            <li><a href="ingredients.html">Superfoods</a></li>
+            <li><a href="nutrition.html">Pet Nutrition</a></li>
+            <li><a href="meal-planner.html">Weekly Planner</a></li>
+            <li><a href="community.html">Pet Table</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+            <li><a href="admin.html">Admin Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-heading">Gourmet Newsletter</h4>
+          <p class="small text-muted mb-3">Receive weekly chef-curated pet recipes and nutrition advice directly in your inbox.</p>
+          <div class="input-group">
+            <input type="email" class="form-control form-paw-control" placeholder="Enter your email...">
+            <button class="btn btn-paw-terracotta" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 PAW &amp; PLATE Culinary Studio. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="nutrition.html">Nutrition Disclaimer</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Profile Result Modal -->
+  <div class="modal fade" id="profileResultModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-warm-white border-0 shadow-lg">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title font-heading text-forest"><i class="fas fa-sparkles text-terracotta me-2"></i> Custom Nutrition Protocol Created</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="recommendedRecipesContainer">
+          <!-- JS fills recommended recipe cards -->
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn-paw btn-paw-outline btn-paw-sm" data-bs-dismiss="modal">Close</button>
+          <a href="meal-planner.html" class="btn-paw btn-paw-primary btn-paw-sm">Add to Meal Planner</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

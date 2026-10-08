@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Table — Community Recipe Inspiration — PAW & PLATE</title>
+  <meta name="description" content="Explore real pet owner feeding stories, artisanal bowl creations, and community pet recipe inspiration.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="community">
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg paw-navbar">
+    <div class="container-custom">
+
+      <!-- Brand Logo -->
+      <a class="brand-logo" href="index.html">
+        <span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE
+      </a>
+
+      <!-- Desktop Center Nav Links -->
+      <div class="d-none d-lg-flex navbar-nav-center">
+        <a class="nav-link-paw active" href="index.html">Home</a>
+        <a class="nav-link-paw" href="recipes.html">Recipes</a>
+        <a class="nav-link-paw" href="ingredients.html">Ingredients</a>
+        <a class="nav-link-paw" href="nutrition.html">Nutrition</a>
+        <a class="nav-link-paw" href="meal-planner.html">Meal Planner</a>
+        <a class="nav-link-paw" href="contact.html">Contact</a>
+      </div>
+
+      <!-- Desktop Right Actions -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a href="recipes.html" class="header-action-btn" title="Search Recipes"><i class="fas fa-search"></i></a>
+        <a href="dashboard.html" class="header-action-btn" title="Saved Favorites">
+          <i class="far fa-heart"></i>
+          <span class="badge-count" id="favCountBadge">1</span>
+        </a>
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary btn-paw-sm ms-2">
+          <i class="fas fa-calendar-alt me-1"></i> Build Meal Plan
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar-toggler border-0 d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas">
+        <i class="fas fa-bars fa-lg text-forest"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-paw" tabindex="-1" id="mobileNavOffcanvas">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html"><i class="fas fa-utensils"></i> PAW & PLATE</a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li><a class="nav-link nav-link-paw" href="index.html"><i class="fas fa-home me-2 text-sage"></i> Home</a></li>
+        <li><a class="nav-link nav-link-paw" href="recipes.html"><i class="fas fa-book-open me-2 text-sage"></i> Recipes</a></li>
+        <li><a class="nav-link nav-link-paw" href="ingredients.html"><i class="fas fa-carrot me-2 text-sage"></i> Ingredients</a></li>
+        <li><a class="nav-link nav-link-paw" href="nutrition.html"><i class="fas fa-heartbeat me-2 text-sage"></i> Nutrition</a></li>
+        <li><a class="nav-link nav-link-paw" href="meal-planner.html"><i class="fas fa-calendar-alt me-2 text-sage"></i> Meal Planner</a></li>
+        <li><a class="nav-link nav-link-paw active" href="community.html"><i class="fas fa-users me-2 text-sage"></i> Community</a></li>
+        <li><a class="nav-link nav-link-paw" href="about.html"><i class="fas fa-info-circle me-2 text-sage"></i> About / Studio</a></li>
+        <li><a class="nav-link nav-link-paw" href="contact.html"><i class="fas fa-envelope me-2 text-sage"></i> Contact</a></li>
+      </ul>
+      <div class="mt-4 pt-3 border-top">
+        <a href="meal-planner.html" class="btn-paw btn-paw-primary w-100">BUILD A MEAL PLAN</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Header Banner -->
+  <section class="bg-cream py-5 border-bottom text-center">
+    <div class="container-custom">
+      <div class="hero-subtitle">THE PET TABLE COMMUNITY</div>
+      <h1 class="display-4 font-heading text-forest mb-2">PET TABLE INSPIRATION</h1>
+      <p class="lead text-muted max-w-600 mx-auto">
+        Discover real pet owner bowl creations, meal preparation stories, and culinary ideas from our global pet family.
+      </p>
+    </div>
+  </section>
+
+  <!-- Community Posts Grid -->
+  <section class="section-padding bg-warm-white">
+    <div class="container-custom">
+      <div class="row" id="communityPostsGrid">
+        <!-- JS renders community story cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Submit Story CTA -->
+  <section class="section-padding bg-cream border-top">
+    <div class="container-custom">
+      <div class="row align-items-center justify-content-between bg-warm-white p-5 rounded-4 border shadow-sm">
+        <div class="col-lg-7">
+          <h2 class="display-6 font-heading text-forest mb-2">Share Your Pet's Meal Creation!</h2>
+          <p class="text-muted mb-0">Have a custom bowl photo or fresh recipe variation your pet loves? Share it with the Pet Table community.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          <button class="btn-paw btn-paw-primary btn-paw-lg" onclick="alert('Feature enabled! Upload your bowl story from your Personal Dashboard.')">
+            <i class="fas fa-camera me-2"></i> SUBMIT BOWL STORY
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="paw-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand"><span class="brand-icon-wrapper"><i class="fas fa-utensils"></i></span> PAW &amp; PLATE</a>
+          <div class="footer-tagline">Beautiful food. Better lives.</div>
+          <p class="small text-muted mb-3">
+            A premium digital culinary studio dedicated to wholesome pet food recipes, tailored nutrition, and weekly bowl planning.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="recipes.html">Recipe Library</a></li>
+            <li><a href="ingredients.html">Superfoods</a></li>
+            <li><a href="nutrition.html">Pet Nutrition</a></li>
+            <li><a href="meal-planner.html">Weekly Planner</a></li>
+            <li><a href="community.html">Pet Table</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Consultation</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+            <li><a href="admin.html">Admin Portal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-heading">Gourmet Newsletter</h4>
+          <p class="small text-muted mb-3">Receive weekly chef-curated pet recipes and nutrition advice directly in your inbox.</p>
+          <div class="input-group">
+            <input type="email" class="form-control form-paw-control" placeholder="Enter your email...">
+            <button class="btn btn-paw-terracotta" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 PAW &amp; PLATE Culinary Studio. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="nutrition.html">Nutrition Disclaimer</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
