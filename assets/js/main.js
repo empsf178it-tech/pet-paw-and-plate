@@ -1095,14 +1095,14 @@ function initDashboardPage() {
   const profileCard = document.getElementById("dashPetProfileCard");
   if (profileCard) {
     profileCard.innerHTML = `
-      <div class="d-flex align-items-center gap-4">
-        <div class="rounded-circle overflow-hidden border border-3 border-cream shadow-sm" style="width:100px;height:100px;flex-shrink:0;">
+      <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start text-center text-sm-start gap-3 gap-md-4">
+        <div class="rounded-circle overflow-hidden border border-3 border-cream shadow-sm mx-auto mx-sm-0" style="width:84px;height:84px;min-width:84px;flex-shrink:0;">
           <img src="assets/images/10.jpg" alt="${profile.name}" style="width:100%;height:100%;object-fit:cover;">
         </div>
-        <div>
-          <h2 class="font-heading mb-1 text-forest">${profile.name}</h2>
-          <div class="text-muted fw-medium mb-2">${profile.breed} • ${profile.age} • ${profile.weight}</div>
-          <div class="d-flex gap-2">
+        <div class="w-100 min-w-0">
+          <h2 class="font-heading mb-1 text-forest h3">${profile.name}</h2>
+          <div class="text-muted fw-medium small mb-2 text-wrap">${profile.breed} • ${profile.age} • ${profile.weight}</div>
+          <div class="d-flex flex-wrap justify-content-center justify-content-sm-start gap-2">
             <span class="tag-badge tag-dog">${profile.lifeStage.toUpperCase()}</span>
             <span class="tag-badge tag-balanced">Activity: ${profile.activity}</span>
           </div>

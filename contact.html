@@ -15,7 +15,7 @@
 <body data-page="contact">
 
   <!-- Sticky Navbar -->
-  <nav class="navbar navbar-expand-lg paw-navbar">
+  <nav class="navbar navbar-expand-xl paw-navbar">
     <div class="container-custom">
 
       <!-- Brand Logo -->
@@ -24,7 +24,7 @@
       </a>
 
       <!-- Desktop Center Nav Links -->
-      <div class="d-none d-lg-flex navbar-nav-center">
+      <div class="d-none d-xl-flex navbar-nav-center">
         <a class="nav-link-paw" href="index.html">Home</a>
         <a class="nav-link-paw" href="recipes.html">Recipes</a>
         <a class="nav-link-paw" href="ingredients.html">Ingredients</a>
@@ -34,7 +34,7 @@
       </div>
 
       <!-- Desktop Right Actions -->
-      <div class="d-none d-lg-flex align-items-center gap-2">
+      <div class="d-none d-xl-flex align-items-center gap-2">
         <a href="recipes.html" class="header-action-btn" title="Search Recipes"><i class="fas fa-search"></i></a>
         <a href="dashboard.html" class="header-action-btn" title="Saved Favorites">
           <i class="far fa-heart"></i>
@@ -45,8 +45,8 @@
         </a>
       </div>
 
-      <!-- Mobile Hamburger -->
-      <button class="navbar-toggler border-0 d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas">
+      <!-- Mobile/Tablet Hamburger -->
+      <button class="navbar-toggler border-0 d-xl-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas">
         <i class="fas fa-bars fa-lg text-forest"></i>
       </button>
 
@@ -141,35 +141,123 @@
 
         <!-- Right: Studio Details & Image -->
         <div class="col-lg-5 reveal-right">
-          <div class="mb-4">
-            <img src="assets/images/40.jpg" alt="Vet nutritionist consultation" class="img-fluid rounded-4 shadow-sm border mb-4">
-            
-            <div class="d-flex align-items-start gap-3 mb-3">
-              <div class="text-terracotta fa-lg mt-1"><i class="fas fa-location-dot"></i></div>
-              <div>
-                <div class="fw-bold text-forest">Culinary Studio Address</div>
-                <div class="text-muted small">742 Evergreen Culinary Way, Studio City, CA 90210</div>
+          <div class="bg-cream p-4 rounded-4 border shadow-sm h-100 d-flex flex-column justify-content-between">
+            <div>
+              <img src="assets/images/40.jpg" alt="Vet nutritionist consultation" class="img-fluid rounded-4 shadow-sm border mb-4 w-100" style="max-height: 200px; object-fit: cover;">
+              
+              <h4 class="font-heading text-forest mb-3">Studio Contact Info</h4>
+              
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <div class="text-terracotta fa-lg mt-1"><i class="fas fa-location-dot"></i></div>
+                <div>
+                  <div class="fw-bold text-forest">Culinary Studio Address</div>
+                  <div class="text-muted small">742 Evergreen Culinary Way, Studio City, CA 90210</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <div class="text-forest fa-lg mt-1"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div class="fw-bold text-forest">Direct Email</div>
+                  <div class="text-muted small">hello@pawandplate.com</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <div class="text-sage fa-lg mt-1"><i class="fas fa-phone"></i></div>
+                <div>
+                  <div class="fw-bold text-forest">Studio Phone</div>
+                  <div class="text-muted small">+1 (800) 555-PAWPLATE</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <div class="text-terracotta fa-lg mt-1"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div class="fw-bold text-forest">Consultation Hours</div>
+                  <div class="text-muted small">Mon - Fri: 8:00 AM - 6:00 PM PST<br>Sat - Sun: 9:00 AM - 3:00 PM PST</div>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-start gap-3 mb-3">
-              <div class="text-forest fa-lg mt-1"><i class="fas fa-envelope"></i></div>
-              <div>
-                <div class="fw-bold text-forest">Direct Email</div>
-                <div class="text-muted small">hello@pawandplate.com</div>
+            <!-- Social Media Channels Section -->
+            <div class="pt-3 border-top mt-auto">
+              <div class="fw-bold text-forest mb-2"><i class="fas fa-share-nodes text-terracotta me-1"></i> Connect @pawandplate</div>
+              <p class="small text-muted mb-3">Follow our daily recipes, vet nutrition guides & studio updates:</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-social-btn social-instagram">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="contact-social-btn social-facebook">
+                  <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener" class="contact-social-btn social-pinterest">
+                  <i class="fab fa-pinterest-p"></i> Pinterest
+                </a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener" class="contact-social-btn social-tiktok">
+                  <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="contact-social-btn social-youtube">
+                  <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener" class="contact-social-btn social-twitter">
+                  <i class="fab fa-x-twitter"></i> X / Twitter
+                </a>
               </div>
             </div>
 
-            <div class="d-flex align-items-start gap-3">
-              <div class="text-sage fa-lg mt-1"><i class="fas fa-phone"></i></div>
-              <div>
-                <div class="fw-bold text-forest">Studio Phone</div>
-                <div class="text-muted small">+1 (800) 555-PAWPLATE</div>
-              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Studio Map Section -->
+  <section class="section-padding bg-warm-white border-top">
+    <div class="container-custom">
+      <div class="text-center mb-4 reveal">
+        <div class="hero-subtitle">VISIT OUR CULINARY STUDIO</div>
+        <h2 class="display-6 font-heading text-forest">Interactive Location Map</h2>
+        <p class="text-muted max-w-600 mx-auto">
+          Located in the heart of Studio City, California. Drop by during consultation hours or get driving directions directly to our studio kitchen.
+        </p>
+      </div>
+
+      <div class="contact-map-card shadow-sm border rounded-4 bg-cream p-3 p-md-4 reveal">
+        <div class="contact-map-wrapper rounded-3 overflow-hidden border mb-3 position-relative" style="height: 400px; min-height: 300px;">
+          <iframe 
+            title="Paw & Plate Studio Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26428.847525367503!2d-118.4069811!3d34.1483861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b97c02b7be5d%3A0x6b777a8b30fa12a4!2sStudio%20City%2C%20Los%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-overlay-badge d-none d-md-flex">
+            <i class="fas fa-utensils text-terracotta fa-lg"></i>
+            <div>
+              <div class="fw-bold text-forest">Paw &amp; Plate Main Studio</div>
+              <div class="small text-muted">742 Evergreen Culinary Way, Studio City, CA</div>
             </div>
           </div>
         </div>
 
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-2">
+          <div class="d-flex align-items-center gap-2 gap-md-3">
+            <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill">
+              <i class="fas fa-parking me-1"></i> Free Studio Parking
+            </span>
+            <span class="badge bg-sage-light text-forest px-3 py-2 rounded-pill d-none d-sm-inline-block">
+              <i class="fas fa-wheelchair me-1"></i> Accessible Facility
+            </span>
+          </div>
+          <a href="https://maps.google.com/?q=742+Evergreen+Culinary+Way,+Studio+City,+CA+90210" target="_blank" rel="noopener" class="btn-paw btn-paw-primary btn-paw-sm">
+            <i class="fas fa-directions me-1"></i> Get Directions on Google Maps
+          </a>
+        </div>
       </div>
     </div>
   </section>

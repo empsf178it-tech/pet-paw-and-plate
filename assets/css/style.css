@@ -1777,6 +1777,116 @@ section, header, footer, main {
     margin-right: 0 !important;
     max-width: 100% !important;
   }
+
+  /* Responsive Button Padding & Text Overflow Fix for Mobile */
+  .btn-paw {
+    white-space: normal !important;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-paw {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+    line-height: 1.35;
+  }
+
+  .btn-paw-lg {
+    padding: 0.85rem 1.25rem !important;
+    font-size: 0.875rem !important;
+    letter-spacing: 0.02em;
+  }
+
+  .bg-warm-white.p-4.p-md-5 {
+    padding: 1.25rem !important;
+  }
+
+  #homePetProfileForm .btn-paw-lg {
+    padding: 0.9rem 1.15rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 600;
+  }
+
+  #dashPetProfileCard {
+    padding: 1.15rem !important;
+    text-align: center;
+  }
+
+  #dashPetProfileCard .tag-badge {
+    font-size: 0.72rem !important;
+    padding: 0.25rem 0.65rem !important;
+  }
+}
+
+/* Contact Page Socials & Interactive Map Styling */
+.contact-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.825rem;
+  font-weight: 600;
+  background-color: var(--warm-white);
+  border: 1px solid var(--border);
+  color: var(--forest);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.contact-social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  color: #FFFFFF !important;
+}
+
+.contact-social-btn.social-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+}
+
+.contact-social-btn.social-facebook:hover {
+  background-color: #1877F2;
+  border-color: #1877F2;
+}
+
+.contact-social-btn.social-pinterest:hover {
+  background-color: #E60023;
+  border-color: #E60023;
+}
+
+.contact-social-btn.social-tiktok:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.contact-social-btn.social-youtube:hover {
+  background-color: #FF0000;
+  border-color: #FF0000;
+}
+
+.contact-social-btn.social-twitter:hover {
+  background-color: #14171A;
+  border-color: #14171A;
+}
+
+.map-overlay-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 5;
 }
 
 /* Reduced Motion for Accessibility */
